@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8164347e8f8fb46688d822fb0230f130
+timeCreated: 1508660736
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - gatePrefab: {fileID: 1969792314619238, guid: bbc9ed562ba134d4f9fad7405043dccc,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
