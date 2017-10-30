@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour {
 		WanderingAI ai = _enemy.GetComponent<WanderingAI> ();
 		ai.spawnGate = 2;
 		int randrange = Random.Range (-5, 5);
-		_enemy.transform.position = new Vector3 (randrange, 1, 15);
+		_enemy.transform.position = new Vector3 (randrange, 0.0f, 15.0f);
 		_enemy.transform.Rotate (0, 0, 0);
 		_enemyList.Add (_enemy);
 	}
@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour {
 			WanderingAI ai = _enemy.GetComponent<WanderingAI> ();
 			ai.spawnGate = 1;
 			int randrange = Random.Range (-5, 5);
-			_enemy.transform.position = new Vector3 (randrange, 1, -15);
+			_enemy.transform.position = new Vector3 (randrange, -5.0f, -15.0f);
 			_enemy.transform.Rotate (0, 0, 0);
 			_enemyList.Add (_enemy);
 		}

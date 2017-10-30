@@ -29,7 +29,7 @@ public class WanderingAI : MonoBehaviour {
 		_health = 3;
 
 		target = GameObject.FindGameObjectWithTag ("Player").transform;
-		navComponent = this.gameObject.GetComponent<NavMeshAgent> ();
+		navComponent = this.gameObject.GetComponentsInChildren<NavMeshAgent> ()[0];
 
 		if (spawnGate == 1) {
 			Transform temp = GateController.getGateTransform (1);
@@ -39,19 +39,26 @@ public class WanderingAI : MonoBehaviour {
 			gateTarget = new Vector3 (temp.position.x, temp.position.y, temp.position.z + 0.5f);
 		}
 		navComponent.autoBraking = true;
+
+		Animation[] animation = GetComponentsInChildren<Animation> ();
+		animation[1].PlayQueued ("Take 001", QueueMode.PlayNow);
+		navComponent.updateRotation = false;
 	}
 
 	// Update is called once per frame
 	void Update () {
+		print (transform.rotation);
+
 		if (_health < 1) {
 			Destroy (gameObject);
 		}
-
 		// Enemy is outside the gate, and trying to get in
 		if (!_insideGate) {
 			// just move towards the gate
 			navComponent.SetDestination (gateTarget);
-			Rigidbody r = gameObject.GetComponent<Rigidbody> ();
+			Rigidbody r = gameObject.GetComponentsInChildren<Rigidbody> ()[0];
+			transform.LookAt( target ) ;
+			transform.Rotate( 0, 90, 0 ) ;
 			r.isKinematic = false;
 		}
 
@@ -59,9 +66,12 @@ public class WanderingAI : MonoBehaviour {
 		if (_insideGate) {
 
 			if (target) {
+				//transform.LookAt (new Vector3(target.position.x, target.position.y, target.position.z));
 
 				navComponent.SetDestination (target.position);
-				Rigidbody r = gameObject.GetComponent<Rigidbody> ();
+				Rigidbody r = gameObject.GetComponentsInChildren<Rigidbody> ()[0];
+				transform.LookAt( target ) ;
+				transform.Rotate( 0, 90, 0 ) ;
 				r.isKinematic = true;
 			}
 		}
@@ -94,6 +104,7 @@ public class WanderingAI : MonoBehaviour {
 //				transform.Rotate(0, angle, 0);
 //			}
 //		}
+
 	}
 
 	// called automatically when this gameobject hits another gameobject
