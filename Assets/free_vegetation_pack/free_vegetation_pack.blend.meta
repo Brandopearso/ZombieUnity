@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 590ea2db3e25649ce97e5682bf2340e4
+timeCreated: 1510103865
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: branch_higher
+    100002: branch_lod_1
+    100004: branch_lod_2
+    100006: bush_higher
+    100008: bush_lod_1
+    100010: bush_lod_2
+    100012: cut_trunk_higher
+    100014: cut_trunk_lod_1
+    100016: cut_trunk_lod_2
+    100018: //RootNode
+    100020: mushroom1_higher
+    100022: mushroom1_lod_1
+    100024: mushroom1_lod_2
+    100026: mushroom2_higher
+    100028: mushroom2_lod_1
+    100030: mushroom2_lod_2
+    100032: mushroom3_higher
+    100034: mushroom3_lod_1
+    100036: mushroom3_lod_2
+    100038: mushroom4_higher
+    100040: mushroom4_lod_1
+    100042: mushroom5_higher
+    100044: mushroom5_lod_1
+    100046: tree_leaves_higher
+    100048: tree_leaves_lod_1
+    100050: tree_leaves_lod_2
+    100052: tree_leaves_particles_higher
+    100054: tree_leaves_particles_lod_1
+    100056: tree_leaves_particles_lod_2
+    100058: tree_no_leaves_higher
+    100060: tree_no_leaves_lod_1
+    100062: tree_no_leaves_lod_2
+    400000: branch_higher
+    400002: branch_lod_1
+    400004: branch_lod_2
+    400006: bush_higher
+    400008: bush_lod_1
+    400010: bush_lod_2
+    400012: cut_trunk_higher
+    400014: cut_trunk_lod_1
+    400016: cut_trunk_lod_2
+    400018: //RootNode
+    400020: mushroom1_higher
+    400022: mushroom1_lod_1
+    400024: mushroom1_lod_2
+    400026: mushroom2_higher
+    400028: mushroom2_lod_1
+    400030: mushroom2_lod_2
+    400032: mushroom3_higher
+    400034: mushroom3_lod_1
+    400036: mushroom3_lod_2
+    400038: mushroom4_higher
+    400040: mushroom4_lod_1
+    400042: mushroom5_higher
+    400044: mushroom5_lod_1
+    400046: tree_leaves_higher
+    400048: tree_leaves_lod_1
+    400050: tree_leaves_lod_2
+    400052: tree_leaves_particles_higher
+    400054: tree_leaves_particles_lod_1
+    400056: tree_leaves_particles_lod_2
+    400058: tree_no_leaves_higher
+    400060: tree_no_leaves_lod_1
+    400062: tree_no_leaves_lod_2
+    2300000: branch_higher
+    2300002: branch_lod_1
+    2300004: branch_lod_2
+    2300006: bush_higher
+    2300008: bush_lod_1
+    2300010: bush_lod_2
+    2300012: cut_trunk_higher
+    2300014: cut_trunk_lod_1
+    2300016: cut_trunk_lod_2
+    2300018: mushroom1_higher
+    2300020: mushroom1_lod_1
+    2300022: mushroom1_lod_2
+    2300024: mushroom2_higher
+    2300026: mushroom2_lod_1
+    2300028: mushroom2_lod_2
+    2300030: mushroom3_higher
+    2300032: mushroom3_lod_1
+    2300034: mushroom3_lod_2
+    2300036: mushroom4_higher
+    2300038: mushroom4_lod_1
+    2300040: mushroom5_higher
+    2300042: mushroom5_lod_1
+    2300044: tree_leaves_higher
+    2300046: tree_leaves_lod_1
+    2300048: tree_leaves_lod_2
+    2300050: tree_leaves_particles_higher
+    2300052: tree_leaves_particles_lod_1
+    2300054: tree_leaves_particles_lod_2
+    2300056: tree_no_leaves_higher
+    2300058: tree_no_leaves_lod_1
+    2300060: tree_no_leaves_lod_2
+    3300000: branch_higher
+    3300002: branch_lod_1
+    3300004: branch_lod_2
+    3300006: bush_higher
+    3300008: bush_lod_1
+    3300010: bush_lod_2
+    3300012: cut_trunk_higher
+    3300014: cut_trunk_lod_1
+    3300016: cut_trunk_lod_2
+    3300018: mushroom1_higher
+    3300020: mushroom1_lod_1
+    3300022: mushroom1_lod_2
+    3300024: mushroom2_higher
+    3300026: mushroom2_lod_1
+    3300028: mushroom2_lod_2
+    3300030: mushroom3_higher
+    3300032: mushroom3_lod_1
+    3300034: mushroom3_lod_2
+    3300036: mushroom4_higher
+    3300038: mushroom4_lod_1
+    3300040: mushroom5_higher
+    3300042: mushroom5_lod_1
+    3300044: tree_leaves_higher
+    3300046: tree_leaves_lod_1
+    3300048: tree_leaves_lod_2
+    3300050: tree_leaves_particles_higher
+    3300052: tree_leaves_particles_lod_1
+    3300054: tree_leaves_particles_lod_2
+    3300056: tree_no_leaves_higher
+    3300058: tree_no_leaves_lod_1
+    3300060: tree_no_leaves_lod_2
+    4300000: mushroom5_lod_1
+    4300002: mushroom4_lod_1
+    4300004: mushroom5_higher
+    4300006: mushroom4_higher
+    4300008: mushroom3_lod_2
+    4300010: mushroom3_lod_1
+    4300012: mushroom2_lod_2
+    4300014: mushroom2_lod_1
+    4300016: mushroom1_lod_2
+    4300018: mushroom1_lod_1
+    4300020: mushroom3_higher
+    4300022: mushroom2_higher
+    4300024: mushroom1_higher
+    4300026: bush_lod_2
+    4300028: bush_lod_1
+    4300030: bush_higher
+    4300032: cut_trunk_lod_2
+    4300034: cut_trunk_lod_1
+    4300036: tree_leaves_lod_2
+    4300038: tree_leaves_lod_1
+    4300040: tree_leaves_particles_lod_2
+    4300042: tree_leaves_particles_lod_1
+    4300044: tree_no_leaves_lod_2
+    4300046: branch_lod_1
+    4300048: tree_no_leaves_lod_1
+    4300050: branch_lod_2
+    4300052: branch_higher
+    4300054: cut_trunk_higher
+    4300056: tree_leaves_particles_higher
+    4300058: tree_leaves_higher
+    4300060: tree_no_leaves_higher
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

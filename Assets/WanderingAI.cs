@@ -23,9 +23,12 @@ public class WanderingAI : MonoBehaviour {
 
 	public int _health;
 
+	public bool isTearingGate;
+
 	void Start () {
 		_atGate = false;
 		_insideGate = false;
+		isTearingGate = false;
 		_health = 3;
 
 		target = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -33,12 +36,12 @@ public class WanderingAI : MonoBehaviour {
 
 		if (spawnGate == 1) {
 			Transform temp = GateController.getGateTransform (1);
-			gateTarget = new Vector3 (temp.position.x, temp.position.y, temp.position.z - 0.5f);
+			gateTarget = new Vector3 (temp.position.x, temp.position.y, temp.position.z + 0.1f);
 		} else if (spawnGate == 2) {
 			Transform temp = GateController.getGateTransform (2);
-			gateTarget = new Vector3 (temp.position.x, temp.position.y, temp.position.z + 0.5f);
+			gateTarget = new Vector3 (temp.position.x, temp.position.y, temp.position.z - 0.1f);
 		}
-		navComponent.autoBraking = true;
+		//navComponent.autoBraking = true;
 
 		Animation[] animation = GetComponentsInChildren<Animation> ();
 		animation[1].PlayQueued ("Take 001", QueueMode.PlayNow);
@@ -47,8 +50,6 @@ public class WanderingAI : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		print (transform.rotation);
-
 		if (_health < 1) {
 			Destroy (gameObject);
 		}
@@ -116,7 +117,7 @@ public class WanderingAI : MonoBehaviour {
 
 			_atGate = true;
 			if (!GateController.tearingGate1 && spawnGate == 1) {
-
+				isTearingGate = true;
 				GateController.tearingGate1 = true;
 				int gateCount = GateController.getGateStack (gate.gateNum).Count;
 				Animation animation = GetComponent<Animation> ();
@@ -128,6 +129,7 @@ public class WanderingAI : MonoBehaviour {
 					gateCount--;
 				}	
 			}else if(!GateController.tearingGate2 && spawnGate == 2) {
+				isTearingGate = true;
 				GateController.tearingGate2 = true;
 				int gateCount = GateController.getGateStack (gate.gateNum).Count;
 				Animation animation = GetComponent<Animation> ();
@@ -143,9 +145,32 @@ public class WanderingAI : MonoBehaviour {
 
 		Fireball fireball = other.GetComponent<Fireball> ();
 		if (fireball != null) {
-			
+
+			GameObject player = GameObject.Find ("Player");
+			player.GetComponent<Player> ()._score+=10;
+
+			GameObject Score = GameObject.Find ("Score");
+			Score.GetComponent<TextMesh> ().text =  "Score:"+player.GetComponent<Player> ()._score;
 			_health--;
 		}
+	}
+
+	void OnDestroy() {
+
+		if (isTearingGate) {
+
+			if (spawnGate == 1) {
+
+				GateController.tearingGate1 = false;
+			}
+			if (spawnGate == 2) {
+
+				GateController.tearingGate2 = false;
+			}
+		}
+		EnemyController._enemyList.Remove (gameObject);
+
+		//Destroy (gameObject);
 	}
 
 	void OnTriggerExit(Collider other) {

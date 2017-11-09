@@ -1,16 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WanderingAI.cs">
     <Files>
-      <File FileName="Assets/WanderingAI.cs" Line="40" Column="4" />
-      <File FileName="Assets/Gun.cs" Line="26" Column="4" />
-      <File FileName="Assets/Fireball.cs" Line="37" Column="3" />
-      <File FileName="Assets/Player.cs" Line="24" Column="48" />
+      <File FileName="Assets/Gun.cs" Line="1" Column="1" />
+      <File FileName="Assets/WanderingAI.cs" Line="151" Column="4" />
+      <File FileName="Assets/Fireball.cs" Line="1" Column="1" />
+      <File FileName="Assets/Player.cs" Line="1" Column="1" />
       <File FileName="Assets/FPSInput.cs" Line="1" Column="1" />
-      <File FileName="Assets/GateDoor.cs" Line="9" Column="32" />
-      <File FileName="Assets/GateController.cs" Line="125" Column="25" />
-      <File FileName="Assets/EnemyBullet.cs" Line="22" Column="26" />
+      <File FileName="Assets/GateDoor.cs" Line="1" Column="1" />
+      <File FileName="Assets/GateController.cs" Line="1" Column="1" />
+      <File FileName="Assets/EnemyBullet.cs" Line="1" Column="1" />
       <File FileName="Assets/Gate.cs" Line="1" Column="1" />
+      <File FileName="Assets/EnemyController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
